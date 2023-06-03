@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Budget_Tracker</title>
+</head>
+<body>
+    <div class="header">
+    <h1>Budget <span>Tracker</span></h1>
+</div>
+    <h2>Welcome!</h2>
+    <p>Our free budget calculator will help you to know exactly where your money is being spent, and how much you've got coming in. Knowing how to manage a budget - keep track of where every Rupee is being spent - is a great first step to starting your savings, getting out of debt or preparing for retirement. Our free Budget_Tracker can help. <br>
+
+        We'll give you:
+        <ul>
+        
+    <li> a place to record all your spending, so you won't forget anything</li>
+    <li> a breakdown of your finances by category</li>
+    <li> personalised tips when you're all finished.</li>
+        </ul>
+        </p>
+        <h2>Here! You Can Start Your Budget Planning</h2>
+        <!-- <button  onclick="popup_show()">Start Budget Planning</button> -->
+        <div>
+            <!-- <h1>Budget</h1>
+        <form action="#">
+           Enter Your Budget Here: <input type="text"  id="Budget" placeholder="Enter Total Amount" required >
+           Due Date: <input type="date" id="due_date" placeholder="Set Due Date" required>
+           Category: <input type="" name="" id="">
+        </form> -->
+        <div class="nav">
+            <button onclick="showBudgetPopup()">Add Budget</button>
+        </div>
+        
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Enter Monthly Budget</h2>
+      <input type="number" id="budgetAmount" placeholder="Enter monthly budget">
+      <br><br>
+      <button onclick="saveBudget()">Save</button>
+      <button onclick="hidePopup()">Cancel</button>
+    </div>
+  </div>
+  
+        <div id="add_category">Add Category
+            <div id="category"> <select name="category" id="category">
+                <option value="#">~Select Category~</option>
+                <option value="food">Food</option>
+                <option value="medical">Medical</option>
+                <option value="rent">Rent</option>
+                <option value="education">Education</option>
+                <option value="fuel">Fuel</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            </div>
+        </div>
+        <div id="add_expenses">Add Expenses
+            <div id="expense"><button onclick="addExpense()">Add Expense</button></div>
+        </div>
+        <div id="list_expenses">List Expenses
+            <div id="list"><button onclick="showList()">Show</button><button onclick="hideList()">Hide</button> </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
